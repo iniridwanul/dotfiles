@@ -1,0 +1,13 @@
+{
+	 "C Snippet": {
+	 	"prefix": "cs",
+	 	"body": [
+			"#include <stdio.h>\n",
+			"int main(void){",
+			"\t$1",
+			"\treturn 0;",
+			"}"
+	 	],
+	 	"description": "C Snippet"
+	 }
+}

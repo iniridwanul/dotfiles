@@ -1,0 +1,8 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.cursorBlinking": "expand",
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on"
+}

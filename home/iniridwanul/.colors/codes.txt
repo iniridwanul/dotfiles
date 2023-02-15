@@ -1,0 +1,2 @@
+Text Color: #00E003
+Background Color: #000000
