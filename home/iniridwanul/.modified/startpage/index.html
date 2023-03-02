@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="us">
+
+<head>
+	<title>Homepage</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="icon" href="bookmark.png">-->
+	<base target="_blank">
+</head>
+
+<body>
+	<div class="sidebar-wrapper">
+		<div class="sidebar">
+			<div class="buttons">
+				<input type="checkbox" id="chb_theme">
+				<label class="btn_theme" for="chb_theme"></label>
+				
+			</div>
+			<div class="sidebar__settings">
+				<h3>Weather</h3>
+				<h4>API</h4>
+				<input class="sidebar__input" type="text" placeholder="Enter key" id="key" autocomplete="off">
+				<h4>City</h4>
+				<input class="sidebar__input" type="text" placeholder="Enter city" id="city">
+				<div class="sidebar__radio">
+					<label class="control control-radio">
+						&deg;C
+						<input type="radio" name="temp_unit" id="celsius">
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control-radio">
+						&deg;F
+						<input type="radio" name="temp_unit" id="fahrenheit">
+						<div class="control__indicator"></div>
+					</label>
+				</div>
+				<button class="sidebar__button" id="weather_apply">Apply</button>
+			</div>
+			<div class="sidebar__settings">
+				<h3>Greeting</h3>
+				<h4>Name</h4>
+				<input class="sidebar__input" type="text" id="greeting_name" name="name_field">
+				<button class="sidebar__button" id="name_apply">Apply</button>
+			</div>
+			<div class="sidebar__settings">
+				<h3>Theme</h3>
+				<h4>Background</h4>
+				<input type="color" id="bg_input">
+				<h4>Foreground</h4>
+				<input type="color" id="fg_input">
+				<h4>Accent</h4>
+				<input type="color" id="accent_input">
+				<div class="sidebar__button-container">
+					<button class="sidebar__button" id="color_apply">Apply</button>
+					<button class="sidebar__button" id="color_reset">Reset</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="header">
+			<h1 class="header__greeting">Howdy, <span class="header__greeting-name">iniridwanul</span>.</h1>
+			<!--<div class="header__weather">
+				<p id="header__weather-alert"></p>
+				<p id="header__weather-info"></p>
+			</div>-->
+			<form class="search-form" action="https://google.com/search" method="get">
+				<input type="text" class="search-form__input" autocomplete="off" name="q">
+				<button type="submit" class="search-form__button">
+					<i class="fa fa-search"></i>
+				</button>
+			</form>
+		</div>
+		<div class="main">
+			<a id="columns" href="https://google.com/ncr">
+				<i class="fab fa-google"></i>
+			</a>
+			<a id="columns" href="https://gmail.com/">
+				<i class="fas fa-envelope"></i>
+			</a>
+			<a id="columns" href="https://github.com/">
+				<i class="fab fa-github"></i>
+			</a>
+			<a id="columns" href="https://mbasic.facebook.com/">
+				<i class="fab fa-facebook"></i>
+			</a>
+			<!--<a id="twitter" href="https://imgur.com/">
+				<i class="fab fa-imgur"></i>
+			</a>
+			<a id="youtube" href="https://www.youtube.com/">
+				<i class="fab fa-youtube"></i>
+			</a>
+			<a id="inbox" href="https://mail.google.com/mail/ca/u/1/#inbox">
+				<i class="fas fa-envelope"></i>
+			</a>
+			<a id="columns" href="https://facebook.com/">
+				<i class="fab fa-facebook"></i>
+			</a>
+			<a id="spotify" href="https://bn.quora.com">
+				<i class="fab fa-quora"></i>
+			</a>
+			<a id="github" href="https://keep.google.com/">
+				<i class="fas fa-clipboard"></i>
+			</a>
+			<a id="reddit" href="https://www.reddit.com/">
+				<i class="fab fa-reddit"></i>
+			</a>-->
+		</div>
+	</div>
+
+	<script src="js/theme.js"></script>
+	<script src="js/greeting.js"></script>
+	<script src="js/weather.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/header.js"></script>
+
+</body>
+
+</html>
