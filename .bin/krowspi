@@ -1,0 +1,25 @@
+#!/usr/bin/bash
+
+krowspi_run(){
+    if [ -d "/home/iniridwanul/Krowspi/venv" ]; then
+        echo -e "Virtual Environment Found"
+        source /home/iniridwanul/Krowspi/venv/bin/activate
+        echo -e "Virtual Environment Activated"
+        if [ -f "/home/iniridwanul/Krowspi/.env" ]; then
+            echo -e ".env File Found"
+            while read line; do
+                if [[ $line == *"="* && $line != \#* ]]; then
+                    export $line
+                fi
+            done </home/iniridwanul/Krowspi/.env
+            echo -e "Variables Exported"
+            python3 /home/iniridwanul/Krowspi/krowspi
+        else
+            echo -e ".env File Not Found"
+        fi
+    else
+        echo -e "Virtual Environment Not Found"
+    fi
+}
+
+krowspi_run
