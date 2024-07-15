@@ -1,0 +1,18 @@
+{
+	"Krowspi": {
+		"prefix": "krowspi",
+		"body": [
+			"import core.client",
+			"from os import environ",
+			"from telethon import events",
+			"",
+			"krowspi = core.client.krowspi",
+			"developer = int(environ['developer'])",
+			"",
+			"@krowspi.on(events.NewMessage(pattern=r'\/send'))",
+			"async def krowspi(event):",
+			"    $1"
+			
+		]
+	}
+}
