@@ -1,0 +1,14 @@
+[
+    {
+        "command": "close_telegram",
+        "keys": "ctrl+x"
+    },
+    {
+        "command": "lock_telegram",
+        "keys": "ctrl+l"
+    },
+    {
+        "command": "quit_telegram",
+        "keys": "ctrl+z"
+    }
+]
