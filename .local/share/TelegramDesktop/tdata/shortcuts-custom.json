@@ -1,35 +1,35 @@
 [
     {
         "command": "lock_telegram",
-        "keys": "shift+l"
+        "keys": "ctrl+shift+l"
     },
     {
         "command": "close_telegram",
-        "keys": "shift+x"
+        "keys": "ctrl+shift+x"
     },
     {
         "command": "quit_telegram",
-        "keys": "shift+q"
+        "keys": "ctrl+shift+q"
     },
     {
         "command": "self_chat",
-        "keys": "shift+s"
+        "keys": "ctrl+shift+s"
     },
     {
         "command": "show_archive",
-        "keys": "shift+a"
+        "keys": "ctrl+shift+a"
     },
     {
         "command": "search",
-        "keys": "shift+f"
+        "keys": "ctrl+shift+f"
     },
     {
         "command": "previous_chat",
-        "keys": "shift+up"
+        "keys": "ctrl+shift+up"
     },
     {
         "command": "next_chat",
-        "keys": "shift+down"
+        "keys": "ctrl+shift+down"
     },
     {
         "command": "previous_folder",
