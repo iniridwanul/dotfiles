@@ -27,7 +27,7 @@ color13                 #ce89df
 color14                 #67cbe7
 color15                 #bdc3c2
 
-# Tab colors
+#Tab colors
 active_tab_foreground   #e182e0
 active_tab_background   #1b2224
 inactive_tab_foreground #cd69cc
