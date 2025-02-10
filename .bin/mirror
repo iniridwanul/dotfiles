@@ -1,3 +1,0 @@
-#!/usr/bin/bash
-
-sudo reflector --verbose --sort rate -l 5 --save /etc/pacman.d/mirrorlist
