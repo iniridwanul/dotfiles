@@ -6,3 +6,7 @@ xrandr --output eDP-1 --mode 1366x768 --output HDMI-1 --same-as eDP-1
 
 # Adjust the brightness of the external monitor (HDMI-1) to 50% (default is 1.0)
 xrandr --output HDMI-1 --brightness 0.5
+
+# Detach the input device with ID 16 from the master pointer/keyboard
+# (this disables the device without removing it).
+xinput float 16
