@@ -1,13 +1,13 @@
-#Base colors
+# Base colors
 foreground              #00E003
 background              #141b1e
 selection_foreground    #dadada
 selection_background    #2d3437
 
-#Cursor colors
+# Cursor colors
 cursor                  #dadada
 
-#Normal colors
+# Normal colors
 color0                  #232a2d
 color1                  #e57474
 color2                  #8ccf7e
@@ -17,7 +17,7 @@ color5                  #c47fd5
 color6                  #6cbfbf
 color7                  #b3b9b8
 
-#Bright colors
+# Bright colors
 color8                  #2d3437
 color9                  #ef7e7e
 color10                 #96d988
@@ -27,7 +27,7 @@ color13                 #ce89df
 color14                 #67cbe7
 color15                 #bdc3c2
 
-#Tab colors
+# Tab colors
 active_tab_foreground   #e182e0
 active_tab_background   #1b2224
 inactive_tab_foreground #cd69cc
