@@ -1,86 +1,121 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  
+  // Logo Configuration
   "logo": {
+    // Path to the Arch Linux logo
     "source": "~/.config/fastfetch/logo/archlinux.png",
+
+    // Logo rendering type for Kitty terminal
     "type": "kitty-direct",
+
+    // Height of the logo
     "height": 15,
+
+    // Width of the logo
     "width": 30,
+
     "padding": {
+      // Padding from the top
       "top": 1,
+
+      // Padding from the left
       "left": 1
     }
   },
+
+  // System Information Modules
   "modules": [
     {
+      // Displays the operating system name
       "type": "os",
       "key": " OS",
       "keyColor": "blue"
     },
     {
+      // Displays the current user
       "type": "command",
       "key": "│ ├ User",
       "keyColor": "green",
       "text": "whoami"
     },
     {
+      // Displays the Linux kernel version
       "type": "kernel",
       "key": "│ ├ Kernel",
       "keyColor": "green"
     },
     {
+      // Displays the total number of installed packages
       "type": "packages",
       "key": "│ ├󰏖 Packages",
       "keyColor": "green"
     },
     {
+      // Displays the currently used terminal emulator
       "type": "terminal",
       "key": "│ ├ Terminal",
       "keyColor": "green"
     },
     {
+      // Displays the default shell
       "type": "shell",
       "key": "│ ├ Shell",
       "keyColor": "green"
     },
     {
+      // Displays the number of days since OS installation
       "type": "command",
       "key": "│ ├ OS Age",
       "keyColor": "green",
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
     },
     {
+      // Displays system uptime since last boot
       "type": "uptime",
       "key": "└ └ Uptime",
       "keyColor": "green"
     },
+
+    // Section break for better readability
     "break",
+
     {
+      // Displays the current desktop environment (e.g., XFCE, GNOME, KDE)
       "type": "de",
       "key": " DE",
       "keyColor": "blue"
     },
     {
+      // Displays the window manager in use
       "type": "wm",
       "key": "│ ├ Window Manager",
       "keyColor": "yellow"
     },
     {
+      // Displays the display manager (e.g., LightDM, GDM)
       "type": "lm",
       "key": "│ ├ Display Manager",
       "keyColor": "yellow"
     },
     {
+      // Displays RAM usage statistics
       "type": "memory",
       "key": "│ ├ Memory",
       "keyColor": "yellow"
     },
     {
+      // Displays the system locale settings
       "type": "locale",
       "key": "└ └ Locale",
       "keyColor": "yellow"
     },
+
+    // Section break for better readability
     "break",
+
     {
+      // Color indicators for aesthetic purposes
       "type": "custom",
       "format": "    \u001b[37m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m "
     }
