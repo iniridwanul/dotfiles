@@ -15,3 +15,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Add the user's bin directory to the PATH
 export PATH="$PATH:$HOME/.bin"
+
+# Source custom aliases from the .aliases file
+source $HOME/.aliases

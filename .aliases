@@ -1,0 +1,2 @@
+# Alias "clear" to reset the terminal
+alias clear="reset"
