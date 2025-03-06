@@ -1,0 +1,120 @@
+[icon-theme]
+name = "Material Icons"
+
+[icon-theme.ui]
+"settings" = "icons/settings.svg"
+
+[icon-theme.foldername]
+".git" = "icons/folder-git.svg"
+".github" = "icons/folder-github.svg"
+".gitlab" = "icons/folder-gitlab.svg"
+".vscode" = "icons/folder-vscode.svg"
+"icons" = "icons/folder-images.svg"
+"images" = "icons/folder-images.svg"
+
+"docs" = "icons/folder-docs.svg"
+
+".cargo" = "icons/rust.svg"
+
+[icon-theme.filename]
+
+"CODEOWNERS" = "icons/codeowners.svg"
+"CONTRIBUTING" = "icons/contributing.svg"
+"README.md" = "icons/readme.svg"
+"LICENSE" = "icons/document.svg"
+"LICENCE" = "icons/document.svg"
+
+"Dockerfile" = "icons/docker.svg"
+".gitignore" = "icons/git.svg"
+".gitattributes" = "icons/git.svg"
+"Makefile" = "icons/makefile.svg"
+"docs" = "icons/folder-docs.svg"
+
+"go.mod" = "icons/go-mod.svg"
+
+"Cargo.toml" = "icons/rust.svg"
+"Cargo.lock" = "icons/rust.svg"
+".rustfmt.toml" = "icons/rust.svg"
+"rustfmt.toml" = "icons/rust.svg"
+
+"bun.lockb" = "icons/bun.svg"
+"bunfig.toml" = "icons/bun.svg"
+
+"biome.json" = "icons/biome.svg"
+"biome.jsonc" = "icons/biome.svg"
+
+".vercelignore" = "icons/vercel.svg"
+
+[icon-theme.extension]
+"spec" = "icons/xml.svg"
+
+"c" = "icons/c.svg"
+"cpp" = "icons/cpp.svg"
+"c++" = "icons/cpp.svg"
+"cs" = "icons/csharp.svg"
+"cmake" = "icons/cmake.svg"
+
+"h" = "icons/h.svg"
+"hpp" = "icons/hpp.svg"
+"h++" = "icons/hpp.svg"
+"html" = "icons/html.svg"
+
+"go" = "icons/go.svg"
+
+"log" = "icons/log.svg"
+"lua" = "icons/lua.svg"
+"less" = "icons/less.svg"
+
+"js" = "icons/javascript.svg"
+"jsx" = "icons/react.svg"
+"json" = "icons/json.svg"
+
+"key" = "icons/key.svg"
+
+"doc" = "icons/word.svg"
+"docx" = "icons/word.svg"
+
+"md" = "icons/markdown.svg"
+
+"gitattributes" = "icons/git.svg"
+"gitignore" = "icons/git.svg"
+
+"ico" = "icons/image.svg"
+
+"rb" = "icons/ruby.svg"
+"rs" = "icons/rust.svg"
+
+"svg" = "icons/svg.svg"
+"sass" = "icons/sass.svg"
+"scss" = "icons/sass.svg"
+"svelte" = "icons/svelte.svg"
+"scm" = "icons/scheme.svg"
+
+"wxs" = "icons/xml.svg"
+
+"ps1" = "icons/powershell.svg"
+"plist" = "icons/xml.svg"
+"png" = "icons/image.svg"
+"py" = "icons/python.svg"
+"pptx" = "icons/powerpoint.svg"
+"pug" = "icons/pug.svg"
+
+"toml" = "icons/document.svg"
+"tf" = "icons/terraform.svg"
+"ts" = "icons/typescript.svg"
+"tsx" = "icons/react_ts.svg"
+
+"xml" = "icons/xml.svg"
+"xaml" = "icons/xaml.svg"
+
+"vue" = "icons/vue.svg"
+
+"wasm" = "icons/webassembly.svg"
+
+"yml" = "icons/yaml.svg"
+"yaml" = "icons/yaml.svg"
+
+"zig" = "icons/zig.svg"
+"zip" = "icons/zip.svg"
+
+"graphql" = "icons/graphql.svg"
