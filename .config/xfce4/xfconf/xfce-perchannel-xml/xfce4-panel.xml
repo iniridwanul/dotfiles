@@ -30,7 +30,7 @@
         <value type="int" value="4"/>
         <value type="int" value="2"/>
       </property>
-      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
