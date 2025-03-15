@@ -1,8 +1,7 @@
+#!/bin/bash
+
 # Author: iniridwanul
 # Email Address: iniridwanul@gmail.com
-
-# This tells the system that the script should be executed using the bash shell
-#!/bin/bash
 
 # The following command fetches the latest mirrorlist from the Arch Linux website
 curl -s "https://archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4&use_mirror_status=on" | \
