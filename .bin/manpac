@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Author: iniridwanul
+# Email Address: iniridwanul@gmail.com
+
+send_message() {
+    # Define your Telegram bot's token here
+    BOT_TOKEN="YOUR_BOT_TOKEN_HERE"
+    # Define the chat ID where the message will be sent
+    CHAT_ID="YOUR_CHAT_ID_HERE"
+    
+    # Get the distribution name (e.g. Arch Linux, Debian) using lsb_release or fallback to /etc/*release
+    DISTRO=$(lsb_release -ds 2>/dev/null || cat /etc/*release | grep -E '^NAME=' | awk -F= '{print $2}' | tr -d '"')
+    # Get the kernel version using the uname command
+    KERNEL=$(uname -r)
+    # Get the system's hostname, using 'hostname' command or fallback to 'uname -n'
+    HOSTNAME=$(hostname 2>/dev/null || uname -n)
+    # Get the current user's username
+    USERNAME=$(whoami)
+    # Get the current date
+    CURRENT_DATE=$(date +"%a %b %d, %Y")
+    # Get the current time
+    CURRENT_TIME=$(date +"%I:%M %p")
+    
+    # Create a formatted message that includes the collected system information
+    MESSAGE="System: $DISTRO
+Kernel: $KERNEL
+Hostname: $HOSTNAME
+Username: $USERNAME
+Date: $CURRENT_DATE
+Time: $CURRENT_TIME
+Upgrade Status: Success"
+    
+    # Use curl to send the message to Telegram, suppressing the terminal output
+    curl -s -X POST "https://api.telegram.org/bot$BOT_TOKEN/sendMessage" \
+         -d "chat_id=$CHAT_ID" \
+         -d "text=$MESSAGE" > /dev/null 2>&1
+}
+
+# The following command fetches the latest mirrorlist from the Arch Linux website
+curl -s "https://archlinux.org/mirrorlist/?country=all&protocol=http&protocol=https&ip_version=4&use_mirror_status=on" | \
+    # The 'sed' command is used to uncomment the lines starting with '#Server' to activate the server list
+    sed '0,/^#Server/ s/^#//' | 
+    # The 'tee' command writes the modified mirrorlist to the /etc/pacman.d/mirrorlist file with elevated privileges
+    sudo tee /etc/pacman.d/mirrorlist > /dev/null  
+
+# Prints a success message indicating the mirror list has been updated
+echo -e "Mirrorlist updated successfully!"
+
+# The following command synchronizes the package databases and upgrades the system packages
+sudo pacman -Syu
+send_message
